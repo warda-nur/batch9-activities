@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, #d89c6e, #8f460e);
+  background-image: linear-gradient(to right, #8f460e, #c4773c, #8f460e);
 }
 
 .chessboard {
@@ -8,12 +8,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vw;
-  margin: 0 auto;
-  width: 50vw;
+  height: 80vmin;
+  margin: 80px auto;
+  width: 90vmin;
   box-shadow: 10px 10px 15px #020202;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
+  border: 2px solid black;
 }
 
 .row {
@@ -24,16 +25,18 @@ body {
 }
 
 .white-box {
-  background-color: #d89c6e;
+  background-color: rgb(216, 146, 71);
   flex: 1;
+  border: 2px solid black;
 }
 .white-box:hover {
   transform: scale(1.1);
 }
 
 .black-box {
-  background-color: #672e03;
+  background-image: linear-gradient(to right, #8f460e, #c4773c, #8f460e);
   flex: 1;
+  border: 2px solid black;
 }
 .black-box:hover {
   transform: scale(1.1);
