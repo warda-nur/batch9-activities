@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #946b4e, #ddba9a, #946b4e);
+  width: 100%;
+  margin: 0 auto;
+}
+/* --- NAV --- */
+header #header-img {
+  position: absolute;
+  max-width: 80px;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.menu-icon {
+  width: 40px;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: -10px;
+  z-index: 2;
+  width: 101%;
+  height: 7vh;
+  margin-top: 0vmin;
+  background: rgb(29, 29, 29, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- NAV TEXT--- */
+
+#menuList li {
+  margin-top: 45px;
+  transition: 0.5s;
+}
+
+#menuList li:hover {
+  transform: translateY(-10px);
+}
+
+#menuList li a:hover {
+  color: #c49675;
+}
+header ul {
+  position: relative;
+  display: flex;
+  margin-left: 750px;
+  margin-top: -20px;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: rgb(238, 236, 236);
+  font-weight: 900;
+  margin-left: 90px;
+  text-decoration: none;
+}
+
+/* --- HOME --- */
+.card1 {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(images/pic3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- TITTLE --- */
+
+.content .textbox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textbox h1 {
+  color: rgb(109, 109, 109);
+  line-height: 1.4em;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.content .textbox h1 span {
+  color: rgb(19, 19, 19);
+  font-size: 1.6em;
+  line-height: 100px;
+  font-weight: 900;
+  font-family: "Galada", cursive;
+}
+/* --- LEARN MORE --- */
+.content .textbox a {
+  display: inline-block;
+  margin-top: -35px;
+  padding: 9px 20px;
+  background-image: linear-gradient(to right, #b58562, #ddba9a, #b58562);
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 2px 5px 10px black;
+}
+
+/* --- DECOR 1 --- */
+
+.decor1 {
+  margin-top: var(--margin-large) !important;
+  background-image: url(images/decor2.jpg);
+  width: 100%;
+  min-height: 50vh;
+  z-index: -1;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* --- SALE --- */
+
+.card2 {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/brick2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+/* --- OPTIONS --- */
+
+.content .imgbox {
+  width: 100px;
+  height: 200px;
+}
+
+.content .imgbox img {
+  max-width: 1000px;
+  width: 100%;
+}
+.imgbox img {
+  transform: scaleX(-1);
+}
+
+.imgbox {
+  position: absolute;
+  bottom: -0vmin;
+  right: -0vmin;
+  z-index: 1;
+}
+
+.thumb {
+  position: absolute;
+  left: 32%;
+  bottom: -100px;
+  transform: translateX(-50%);
+  display: flex;
+}
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 300px 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 150px;
+  box-shadow: 1px 10px 10px black;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1700px;
+  width: 100%;
+  height: 100%;
+  background: rgb(227, 227, 227);
+  clip-path: circle(600px at right 800px);
+}
+.card2 h2 {
+  position: absolute;
+  top: 160px;
+  left: 200px;
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+
+  /*color: rgb(238, 238, 238);
+    -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+    -moz-animation: glow 0.5s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b58562, 0 0 40px #b58562, 0 0 50px #b58562, 0 0 60px #b58562, 0 0 70px #4a2307;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #b58562, 0 0 40px #b58562, 0 0 50px #b58562, 0 0 60px #b58562, 0 0 70px #b58562, 0 0 80px #4a2307;
+    }*/
+}
+
+/* --- DECOR 2 --- */
+
+.decor3 {
+  margin-top: var(--margin-large) !important;
+  background-image: url(images/decor3.jpg);
+  width: 100%;
+  min-height: 50vh;
+  z-index: -1;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+/* --- SHOP--- */
+.card3 {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/brick2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+/* --- OUR SHOP --- */
+.card3 h3 {
+  position: absolute;
+  top: -30px;
+  left: 35%;
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+}
+/* --- CAROUSEL PICS --- */
+a {
+  text-decoration: none;
+}
+
+#autoWidth {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  width: 300px;
+  box-shadow: 2px 2px 30px black;
+  border-radius: 10px;
+  overflow: hidden;
+
+  margin: 40px;
+  margin-bottom: -160px;
+}
+
+.slide-img {
+  height: 450px;
+  position: relative;
+  cursor: pointer;
+}
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: rgb(227, 227, 227, 0.6);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+}
+.type a {
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+.type span {
+  color: #575757;
+}
+.price {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(222, 222, 222, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  color: rgb(228, 228, 228);
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px black;
+}
+.buy-btn:hover {
+  color: rgb(34, 34, 34);
+  background-color: rgb(228, 228, 228);
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+.slide-img:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* --- DECOR 4 --- */
+
+.decor4 {
+  margin-top: var(--margin-large) !important;
+  background-image: url(images/decor2.jpg);
+  width: 100%;
+  min-height: 50vh;
+  z-index: -1;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* --- WHAT'S NEW --- */
+
+.card4 {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/brick2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+.card4 h4 {
+  position: absolute;
+  bottom: 550px;
+  left: 37%;
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+}
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: rgb(29, 29, 29, 0.9);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* --- VIDEO --- */
+
+#shopvideo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* --- decor5 --*/
+
+.decor5 {
+  margin-top: var(--margin-large) !important;
+  background-image: url(images/decor3.jpg);
+  width: 100%;
+  min-height: 50vh;
+  z-index: -1;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+.card5 {
+  position: relative;
+  max-width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/brick2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.card5 h5 {
+  position: absolute;
+  bottom: 290px;
+  left: 29%;
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+}
+/* --- EMAIL --- */
+
+#buy-now #email {
+  display: flex;
+  justify-content: center;
+  margin-top: 190px;
+  width: 50rem;
+  height: 4rem;
+  font-size: 25px;
+  padding: 0.25rem 0.75rem;
+  background-color: #e9e9e9;
+  border: 1px solid #484848;
+  border-radius: 10px;
+  box-shadow: 1px 5px 15px rgb(74 72 72);
+  cursor: pointer;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+
+  color: #e9e9e9;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 5px 10px black;
+  font-weight: 700;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #b58562, #ddba9a, #b58562);
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  text-shadow: 3px 2px 7px black;
+
+  animation: button-animation 0.65s 0.15s ease-out forwards;
+}
+
+#sumbit {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#submit:hover:hover,
+#submit:hover:hover div {
+  animation: button-animation-rev 0.65s ease-out forwards;
+}
+
+#submit:hover {
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes button-animation-rev {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  animation: button-animation 0.65s 0.15s ease-out forwards;
+  display: table;
+  border-radius: 0.5em;
+  text-decoration: none;
+  box-shadow: 7px 4px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 1.5em 0;
+  cursor: pointer;
+}
+/* --- RESULTS --- */
+.result-text h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 400px;
+}
+
+.return-btn {
+  position: absolute;
+  top: 86%;
+  left: 38%;
+  width: 150px;
+  padding: 20px 10px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  margin: 0 45%;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 2px 7px black;
+  box-shadow: 1px 5px 15px rgb(41, 41, 41);
+  background-image: linear-gradient(to right, #b58562, #ddba9a, #b58562);
+  z-index: 1;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card6 {
+  position: relative;
+  max-width: 330vmin;
+  min-height: 93vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: url(images/brick2.jpg);
+  background-size: 100% 100%;
+  z-index: -1;
+  margin: 20px;
+  box-shadow: 3px 5px 20px black;
+  border: 2px solid black;
+}
+
+.card6 h6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px;
+
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+}
+.card6 h5 {
+  position: relative;
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: rgb(238, 238, 238);
+  text-shadow: 5px 5px 10px black;
+}
+
+@media only screen and (max-width: 768px) {
+  .card1 {
+    max-width: 100%;
+
+    background: url(images/pic3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 5px;
+    z-index: 2;
+    width: 1%;
+    height: 7vh;
+    margin-top: 0vmin;
+
+    font-size: 17px;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media (max-width: 768px) {
+  .decor1 {
+    margin-top: var(--margin-large) !important;
+    background-image: url(images/decor2.jpg);
+    width: 100%;
+    min-height: 50vh;
+    z-index: -1;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin: 40px;
+    margin-bottom: -160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .thumb {
+    width: 100%;
+    position: absolute;
+    left: 32%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    display: flex;
+  }
+}

@@ -1,0 +1,266 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+<script type="text/javascript" src="assets/Jquery.js"></script>-->
+
+
+<html lang="en">
+  <!--head-->
+  <head>
+
+      <!---page icon-->
+     <link rel="shortcut icon" href="images/logo2.png">
+
+     <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+     
+      <title>landing page</title>
+
+  </head>
+
+  <!--body-->
+  <body>
+      <!--home-->
+    <section id="home">
+    
+    <section class="card1">
+     
+  <header id="header">
+    <!--logo-->
+    <img src="images/logo2.png" id="header-img" width="150px"/>
+    <!--nav bar-->
+    <nav id="nav-bar">
+        <div class="nav">
+      <ul id="menuList"> 
+        <li><a class="nav-link" href="#home"><b> HOME </b></a> &nbsp; &nbsp; &nbsp;</li>
+        <li><a class="navlink" href="#sale"><b> SALE </b></a> &nbsp; &nbsp; &nbsp;</li>
+        <li><a class="navlink" href="#shop"><b> SHOP </b></a> &nbsp; &nbsp; &nbsp;</li>
+        <li><a class="nav-link" href="#whats-new"><b> WHAT'S NEW </b></a> &nbsp; &nbsp;</li>
+        <li><a class="nav-link" href="#buy-now"><b> BUY NOW </b></a> &nbsp; &nbsp;</li>
+      </ul>
+      
+  </div>
+    </nav>
+    <!--menu icon-->
+    <!---<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAArUlEQVRoQ+2WQQrAIBDE9P+Prj+QgTAs0vTsrLuJYvd6/NuP978cYNqgBjQACXiEIEAc1wBGCAv8wsAHIdH4FXJiwAGgAg1AgN14cge6HcDqDgAB4rgGMEJYIDHgQ9aErAFIN4njX4lkk7E1yREaay7Z2AESSs01GmjSTWonBnyJE5KXNfgd0MC0Abh/N55c4m4HsLoDQIA4rgGMEBbQAASI4xrACGEBDUCAOH4Al9kMMZG0RokAAAAASUVORK5CYII=" class="menu-icon" onclick="togglemenu()"/>--->
+  </header>
+  <div class="content">
+     <class class="textbox">
+         <h1><b>The Ideal Fragrance.<br> Premium Perfume.</b> <br> <span> Scnt Dze</span></h1>
+          <a href="#"><b>Learn More</b></a>
+         </div>
+        </section>
+<!--decor 1-->
+        <div class="decor1"></div>
+
+    <!--sale--> 
+
+    
+    <section id="sale">
+        <section class="card2">
+            <div class="circle"></div>
+           <div id="tittle"> <h2>30% OFF SALE!</h2> </div>
+     <!--options-->
+          <div class="imgbox">
+            <img src="images/pic1.png" class="perfume">
+        </div>
+    </div> 
+<ul class="thumb">
+    <li><img src="images/pic2.png" onclick="imgSlider('images/pic1.png');changeCircleColor('rgb(227, 227, 227)')"></li>
+    <li><img src="images/pic2.png" onclick="imgSlider('images/pic2.png');changeCircleColor('rgb(227, 227, 227)')"></li>
+    <li><img src="images/pic2.png" onclick="imgSlider('images/pic4.png');changeCircleColor('rgb(227, 227, 227)')"></li>
+</ul>
+
+        </section>
+    </section>
+
+    <div class="decor3"></div>
+<!--shop-->
+
+    <section id="shop"> 
+        <section class="card3">
+
+        <div id="tittle"> <h3>OUR SHOP</h3> </div>
+
+            <ul id="autoWidth" class="cs-hidden">
+        <!--1------>
+                <li class="item-a">
+               <!---carousel pics-->
+                <div class="box">
+                    <!--images-->
+                    <div class="slide-img">
+                        <img src="images/slide1.jpg">
+                        <!--overlayer-->
+                        <div class="overlay">
+                            <!---buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now </a>
+                        </div>
+                    </div>
+                    <!--deatail box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Channel Perfume</a>
+                            <span>new arrival</span>
+                        </div>
+                        <!---price-->
+                        <a href="#" class="price">$20</a>
+                    </div>
+                 </div>
+                </li>
+        <!--2------>
+            <li class="item-b">
+                <!---carousel pics-->
+                 <div class="box">
+                     <!--images-->
+                     <div class="slide-img">
+                         <img src="images/slide2.jpg">
+                         <!--overlayer-->
+                         <div class="overlay">
+                             <!---buy-btn-->
+                             <a href="#" class="buy-btn">Buy Now </a>
+                         </div>
+                     </div>
+                     <!--deatail box-->
+                     <div class="detail-box">
+                         <!--type-->
+                         <div class="type">
+                             <a href="#">Channel Perfume</a>
+                             <span>new arrival</span>
+                         </div>
+                         <!---price-->
+                         <a href="#" class="price">$30</a>
+                     </div>
+                  </div>
+                 </li>
+        <!--3------>
+                <li class="item-c">
+                    <!---carousel pics-->
+                     <div class="box">
+                         <!--images-->
+                         <div class="slide-img">
+                             <img src="images/slide3.jpg">
+                             <!--overlayer-->
+                             <div class="overlay">
+                                 <!---buy-btn-->
+                                 <a href="#" class="buy-btn">Buy Now </a>
+                             </div>
+                         </div>
+                         <!--deatail box-->
+                         <div class="detail-box">
+                             <!--type-->
+                             <div class="type">
+                                 <a href="#">Channel Perfume</a>
+                                 <span>new arrival</span>
+                             </div>
+                             <!---price-->
+                             <a href="#" class="price">$25</a>
+                         </div>
+                      </div>
+                     </li>
+         <!--4------>
+                <li class="item-d">
+                    <!---carousel pics-->
+                     <div class="box">
+                         <!--images-->
+                         <div class="slide-img">
+                             <img src="images/slide4.jpg">
+                             <!--overlayer-->
+                             <div class="overlay">
+                                 <!---buy-btn-->
+                                 <a href="#" class="buy-btn">Buy Now </a>
+                             </div>
+                         </div>
+                         <!--deatail box-->
+                         <div class="detail-box">
+                             <!--type-->
+                             <div class="type">
+                                 <a href="#">Channel Perfume</a>
+                                 <span>new arrival</span>
+                             </div>
+                             <!---price-->
+                             <a href="#" class="price">$45</a>
+                         </div>
+                      </div>
+                    </li>
+                    
+              </ul>
+
+        </section>
+    </section>
+
+    <div class="decor4"></div>
+
+    <!--whats new-->
+    <section id="whats-new">
+    <section class="card4">
+        <div id="tittle"> <h4> UPDATES </h4> </div>
+    
+
+<div id="shopvideo" style="width: 100%; overflow: hidden">
+    <iframe 
+    width="760" height="515"
+    src="https://www.youtube.com/embed/J505a4hEOQI"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+      </div>
+
+    </section>
+</section>
+<!--- menu icon toggle --->
+
+
+
+  </body>
+
+  <div class="decor5"></div>
+
+<!--BUY NOW-->
+  <footer>
+<section class="card5">
+    <div id="tittle"> <h5> NEWSLETTER </h5> </div>
+    <section id="buy-now">
+      
+      <form id="form"  action="/assets/resultpage.html" method="GET">
+     
+      
+       <input id="email" type="email" name="email" placeholder="Enter Email" class="email" required> </input>
+
+<br>
+<div class="button">
+       <input
+        id="submit" 
+        type="submit"
+        value="Submit"
+        class="submit-button">
+       </input>  
+    </div>   
+
+      </form>
+      
+      <script type="text/javascript">
+      function imgSlider (anything){
+          document.querySelector('.perfume').src = anything;
+      }
+
+      function changeCircleColor(color){
+          const circle = document.querySelector('.circle');
+          circle.style.background = color;
+      }
+     </script>
+       </section>
+
+      </section>
+  </footer>
+</html>

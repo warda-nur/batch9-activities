@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const resultsList = document.getElementById("results");
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultsList.append(`${name}: ${value}`);
+        resultsList.append(document.createElement("br"));
+      });
+    </script>
+
+
+
+
+
+  </head>
+  <body>
+<div class="card6">
+    <div class="result-text">
+      <h6>Thank You!</h6>
+      <h5>we loved having you</h5>
+    </div>
+  </div>
+
+    <div id="results"></div>
+<a href="/assets/index.html" class="return-btn">Back to Home</a>
+  </div>
+
+  </body>
+</html>
