@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <!--select player -->
+    <div class="select-box">
+      <h2>TIC TAC TOE</h2>
+      <div class="content">
+        <div class="blink" class="tittle">Select Player</div>
+        <div class="options">
+          <button class="playerX">Player X</button>
+          <button class="playerO">Player O</button>
+        </div>
+      </div>
+    </div>
+    <!-- Game -->
+
+    <div class="play-board">
+      <div class="wrap">
+        <header>
+          <h1 class="gradient-text">TIC TAC TOE</h1>
+        </header>
+      </div>
+
+      <div id="container">
+        <span id="playerDisplay">X's Move</span>
+        <div id="board">
+          <div class="tile 0"></div>
+          <div class="tile 1"></div>
+          <div class="tile 2"></div>
+          <div class="tile 3"></div>
+          <div class="tile 4"></div>
+          <div class="tile 5"></div>
+          <div class="tile 6"></div>
+          <div class="tile 7"></div>
+          <div class="tile 8"></div>
+        </div>
+
+        <div id="buttons">
+          <button id="previousBtn">Previous</button>
+          <button id="nextBtn">Next</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <h2 id="modal-header"></h2>
+        <span id="modal-text"></span>
+        <div class="modal-btn">
+          <button id="newBtn">Play Again</button>
+          <button id="historyBtn">Game History</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
