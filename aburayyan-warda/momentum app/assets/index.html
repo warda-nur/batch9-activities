@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum app</title>
+  </head>
+  <body>
+    <div class="page2"></div>
+
+    <!--greeting-------------------------------------->
+    <div id="main-container" class="none">
+      <div class="top-row"></div>
+
+      <div class="center-above"></div>
+
+      <div class="center">
+        <div id="time"></div>
+        <div class="greeting-container">
+          <span class="greeting">Good Day, </span>
+          <span class="name" contenteditable="true">User</span>
+          <div
+            id="icon-name"
+            class="icon-large icon-square-hover"
+            title="Change Name"
+          >
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="/images/pic3.png" class="semi-circle" />
+    <!--FOCUS-------------------------------------->
+ 
+    
+      <div class="center-below">
+            <div id="focus-container" class="focus-container">
+                <p id="focus-question">Main focus for today</p>
+                <input id="focus-input">
+            </div>
+            <div id="goal-container" class="goal-container">
+                <p id="goal-title">TODAY</p>
+                <div id="goal-div">
+                    <input class="checkbox" type="checkbox" id="checkbox">
+                    <p id="goal-text">Goal</p>
+                    <div class="rotate icon-large icon-large-hover" id="goal-remove" title="remove" >CHANGE MAIN FOCUS</div>
+                </div>
+            </div>
+        </div>
+
+    <!--POP UP-------------------------------------->
+    <button data-modal-target="#modal" class="modal-btn">ToDo</button>
+  
+
+    <div class="modal" id="modal">
+      <!--TO DO LIST-------------------------------------->
+      <div id="card1"></div>
+      <header class="modal-header">
+        <h1>To Do List</h1>
+
+        <button data-close-button class="close-button">&times;</button>
+      </header>
+
+      <div class="modal-body">
+        <form>
+          <input type="text" class="todo-input" placeholder="✎ Add To-Do..." />
+          <button type="submit" class="todo-button">
+            <i class="fas fa-plus"></i>
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <!--QUOTES--------------------------------------------------------------->
+    <div id="quotes-container">
+      <p>
+          <span id="quotes-text"></span>
+          <span id="quotes-addtl-container">
+              <span id="quotes-author"></span>
+              <span>
+                <div
+                id="next-quote-icon"
+                class="icon-small icon-hover"
+                title="Next Quote">
+             <i class="fas fa-angle-double-right"></i>
+              </div>
+              </span>
+              <span>
+              <div
+                id="add-quote-icon"
+                class="icon-small icon-hover"
+                title="Add Own Quote">
+             <i class="fas fa-plus"></i>
+            </div>
+  
+              </span>
+                  
+              <!-- Quotes Modal -->
+              
+              <div id="quotes-modal">
+                <div id="card2">
+
+                  <div class="modal-content">
+                    <h2>Enter Quote</h2>
+                      <label for="quote-text">Quote Text:</label>
+                      <textarea id="quote-texts" 
+                                  name="quote-text"
+                                  class="input-quote" 
+                                  placeholder="✎ Add quote"></textarea>
+                      <label for="quote-author">Quote Author:</label>
+                      <input type="text" 
+                              id="quote-author" 
+                              name="quote-author" 
+                              class="input-author"
+                              autocomplete="off"
+                              placeholder="✎ Add author">
+                      <button id="quote-submit">Enter</button>
+                      <button id="quote-cancel">Cancel</button>
+                  </div>
+              </div>
+          </span>
+      </p>
+    </div>
+  </div>
+
+  
+</div>
+</div>
+<div id="overlay"></div>
+
+    <!--FOOTER--------------------------------------------->
+   
+  </body>
+  <div id="results"></div>
+  <script src="/assets/quoteModal.js"></script>
+  <script src="/assets/popUp.js"></script>
+  <script src="/assets/app.js"></script>
+  <script src="/assets/toDo.js"></script>
+  <script>
+    const resultsList = document.getElementById("results");
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+      resultsList.append(`${name}: ${value}`);
+      resultsList.append(document.createElement("br"));
+    });
+  </script>
+</html>
