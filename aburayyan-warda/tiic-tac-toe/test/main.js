@@ -26,6 +26,8 @@ window.onload = () => {
 selectBtnO.onclick = () => {
   selectBox.classList.add("hide");
   playBoard.classList.add("show");
+  xTurn = false;
+  updatePlayer("O");
 };
 
 //VARIABLES//
@@ -47,12 +49,16 @@ for (let tile of tiles) {
 }
 
 //modal buttons//
-newGameBtn.addEventListener("click", reset);
 
+newGameBtn.addEventListener("click", reset);
 gameHistoryBtn.addEventListener("click", () => {
   previousBtn.style.visibility = "visible";
   modalContainer.style.display = "none";
 });
+// play again refresh//
+function refreshPage() {
+  window.location.reload();
+}
 
 //previous button//
 previousBtn.addEventListener("click", () => {
