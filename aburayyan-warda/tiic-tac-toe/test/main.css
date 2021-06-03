@@ -55,17 +55,35 @@ body {
   margin-bottom: 55px;
   color: #eeffff;
 }
+.img-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -43.5% !important;
+  margin-left: 25% !important;
+  height: 40%;
+  z-index: -1;
+}
 
-.select-box .tittle {
-  font-size: 35px !important;
+.select-box .blink .tittle {
   font-weight: 500;
   margin: 20px 0;
-  color: #eeffff;
-  text-shadow: 2px 2px 0px black;
+  font-size: 35px !important;
+  color: #b5cece !important;
+  text-shadow: 1px 2px 2px black;
+}
+
+.select-box .blink {
+  font-weight: 500;
+  margin: 20px 0;
+  font-size: 35px !important;
+  color: #eeffff !important;
+  text-shadow: 1px 2px 2px black;
 }
 .blink {
   font-size: 35px !important;
-  animation: blinker 1.5s linear infinite;
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
@@ -77,9 +95,9 @@ body {
   display: flex;
   width: 100%;
 }
-
 .options button {
-  margin-left: 20%;
+  margin-top: 12%;
+  margin-left: 21%;
   width: 170px;
   font-size: 25px;
   padding: 10px;
@@ -313,7 +331,6 @@ button:active {
   letter-spacing: 2px;
   background-image: linear-gradient(#15a2b1, #c3e0e5);
   border-radius: 60px;
-
   color: #eeffff;
   text-shadow: 3px 3px 0px #00173c;
   line-height: 60px;
@@ -361,6 +378,55 @@ button:active {
   background-color: #2b3663;
 }
 
+/* clouds */
+
+#img-clouds {
+  position: absolute;
+  top: 30%;
+  left: -4%;
+  width: 45%;
+  z-index: -1;
+}
+
+#img-clouds1 {
+  position: absolute;
+  top: 30%;
+  right: -4%;
+  width: 45%;
+  z-index: -1;
+}
+
+.music {
+  position: absolute;
+  top: 85%;
+  right: -2%;
+  opacity: 1;
+  cursor: pointer !important;
+  z-index: 1;
+  opacity: 0;
+}
+.controls {
+  position: absolute;
+  text-shadow: 2px 2px 0px #00173c;
+  color: #eeffff;
+  font-size: 30px;
+  top: 90%;
+  right: 2%;
+}
+/*.fa-play {
+  transition: all 0.3s ease;
+}
+.fa-play:hover {
+  transform: scale(1.4);
+}
+
+.fa-pause {
+  transition: all 0.3s ease;
+}
+.fa-pause:hover {
+  transform: scale(1.4);
+}*/
+
 @media (min-width: 475px) {
   h1 {
     font-size: 3rem;
@@ -389,5 +455,24 @@ button:active {
   #modal-text {
     font-size: 6vmin;
     padding: 1.5em;
+  }
+  .img-box {
+    margin-top: -54%;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .img-box {
+    position: absolute;
+    top: 76%;
+    right: 18%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .img-box {
+    position: absolute;
+    top: 78.5%;
+    right: 19%;
   }
 }
