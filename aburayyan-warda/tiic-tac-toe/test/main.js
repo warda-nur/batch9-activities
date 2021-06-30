@@ -1,5 +1,3 @@
-//ELEMENTS//
-
 const selectBox = document.querySelector(".select-box");
 const selectBtnX = selectBox.querySelector(".options .playerX");
 const selectBtnO = selectBox.querySelector(".options .playerO");
@@ -49,7 +47,6 @@ for (let tile of tiles) {
 }
 
 //modal buttons//
-
 newGameBtn.addEventListener("click", reset);
 gameHistoryBtn.addEventListener("click", () => {
   previousBtn.style.visibility = "visible";
@@ -79,7 +76,7 @@ previousBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   previousBtn.style.visibility = "visible";
   if (previousMoveArray.length != 0) {
-    let lastMove = previousMoveArray[previousMoveArray.length - 1]; //moveObject
+    let lastMove = previousMoveArray[previousMoveArray.length - 1];
     let targetCell = tiles[parseInt(lastMove.tile)];
     let lastPlayer = lastMove.player;
     targetCell.classList.add(lastPlayer);
@@ -96,7 +93,6 @@ nextBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", reset);
 
 //FUNCTIONS//
-
 function play(e) {
   //know wich tile was clicked//
   const target = e.target;
@@ -104,7 +100,7 @@ function play(e) {
   const tile = classList[1];
   const player = classList[2];
   target.removeEventListener("mouseenter", hover);
-  //if class already contains x or o//
+  //if already contains x or o//
   if (player === "X" || player === "O") {
     return;
   }
@@ -160,20 +156,20 @@ function isWinner() {
   const tile8 = tiles[8].classList[2];
 
   const winningConditions = [
-    //all three tiles in any row are the same//
+    //row are the same//
     [tile0, tile1, tile2],
     [tile3, tile4, tile5],
     [tile6, tile7, tile8],
-    //all three tiles in any column are the same//
+    //column are the same//
     [tile0, tile3, tile6],
     [tile1, tile4, tile7],
     [tile2, tile5, tile8],
-    //all three tiles diagonally are the same//
+    //diagonally are the same//
     [tile0, tile4, tile8],
     [tile2, tile4, tile6],
   ];
 
-  //check if any winning condition is fulfilled//
+  //any winning condition//
   winningConditions.some((tile) => {
     if (tile[0] && tile[0] === tile[1] && tile[0] === tile[2]) {
       playerDisplay.textContent = `Player ${tile[0]} won!`;
@@ -188,7 +184,7 @@ function isWinner() {
   });
 }
 
-//checks if game is a draw and all tiles are occupied and no winning combination//
+//game is a draw//
 function isDraw() {
   if (occupiedCells === 9 && !isGameOver()) {
     playerDisplay.textContent = "IT'S A TIE!";
